@@ -1,12 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
 
 const Footer = () => {
   return (
     <footer>
-      footer  
+      <div className="footer-inner">footer</div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

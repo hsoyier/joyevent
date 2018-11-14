@@ -1,5 +1,4 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
 
 const Category = () => {
   return (
@@ -15,7 +14,7 @@ const Category = () => {
         <li>Ticket</li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Category
+export default Category;

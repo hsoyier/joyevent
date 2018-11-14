@@ -1,0 +1,29 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header-inner {
+  background: yellow;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.event .container {
+  max-width: 1600px;
+}
+
+.footer-inner {
+  background: yellow;
+  padding: 2rem;
+}
