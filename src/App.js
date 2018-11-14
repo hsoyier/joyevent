@@ -11,7 +11,8 @@ class App extends Component {
   state = {
     eventsDatas: [],
     logo: "",
-    value: ""
+    value: "",
+    date: ""
   };
   componentWillMount = () => {
     this.getApi();
@@ -29,9 +30,10 @@ class App extends Component {
       });
     }
   };
-  searchApi = async location => {
+  searchApi = async () => {
+    const { value, date } = this.state;
     const response = await fetch(
-      `http://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search/?location.address=${location}&token=${PERSONAL_OAUTH_TOKEN}`
+      `http://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search/?location.address=${value}&start_date.keyword=${date}&token=${PERSONAL_OAUTH_TOKEN}`
     );
     if (response.status === 200) {
       const json = await response.json();
@@ -41,27 +43,32 @@ class App extends Component {
         eventsDatas: events
       });
     }
-    this.categoriesApi();
   };
   handleSubmit = e => {
     e.preventDefault();
-    const location = this.state.value;
-    this.searchApi(location);
+    this.searchApi();
   };
   handleChange = e => {
     this.setState({
       value: e.target.value
     });
   };
+  hadnleDate = e => {
+    this.setState({
+      date: e.target.value
+    });
+  };
   render() {
-    const { eventsDatas, value } = this.state;
+    const { eventsDatas, value, date } = this.state;
     return (
       <div className="App">
         <Header />
         <SearchForm
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
+          hadnleDate={this.hadnleDate}
           value={value}
+          date={date}
         />
         <main>
           <Events eventsDatas={eventsDatas} handlePage={this.handlePage} />

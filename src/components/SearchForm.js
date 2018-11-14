@@ -11,8 +11,7 @@ class SearchForm extends Component {
               type="text"
               value={this.props.value}
             />
-            {/* <select className="search-date">
-              <option>Any date</option>
+            <select onChange={this.props.hadnleDate} value={this.props.date}>
               <option value="today">Today</option>
               <option value="tomorrow">Tomorrow</option>
               <option value="this_weekend">This weekend</option>
@@ -20,8 +19,7 @@ class SearchForm extends Component {
               <option value="next_week">Next week</option>
               <option value="this_month">This month</option>
               <option value="next_month">Next month</option>
-              <option value="custom_date">Pick a date...</option>
-            </select> */}
+            </select>
             <input type="submit" value="Search" />
           </form>
         </div>
