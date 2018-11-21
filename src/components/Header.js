@@ -3,9 +3,8 @@ import React from "react";
 const Header = () => {
   return (
     <header className="header">
-      <div className="header-inner">
-        <h1 className="title">Vancity Events</h1>
-        <p className="signIn">Sign In</p>
+      <div className="container">
+        <h1 className="title">Joyevent</h1>
       </div>
     </header>
   );

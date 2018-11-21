@@ -5,17 +5,21 @@ class Events extends React.Component {
     return (
       <section className="event">
         <div className="container">
-          <ul className="row">
+          <ul className="row event__list">
             {this.props.eventsDatas.map(event => {
               return (
-                <li className="col-md-4" key={event.id}>
+                <li className="col-md-4 event__item" key={event.id}>
                   {event.logo ? (
-                    <img src={event.logo.url} alt={event.id} />
+                    <div className="img__box">
+                      <img src={event.logo.url} alt={event.id} />
+                    </div>
                   ) : (
                     <div className="dummy" />
                   )}
-                  <h3>{event.name.text}</h3>
-                  <p>{event.start.local}</p>
+                  <div className="event__infos">
+                    <h3 className="event__title">{event.name.text}</h3>
+                    <p className="event__time">{event.start.local}</p>
+                  </div>
                 </li>
               );
             })}

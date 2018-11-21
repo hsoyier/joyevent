@@ -1,34 +1,102 @@
+$main_color: #fce440;
+
 html {
   font-size: 10px;
 }
 
 body {
   font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  color: #333;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+.dummy {
+  background: #efefef;
+  width: 360px;
+  height: 180px;
+}
+
+.container {
+  padding: 0;
+}
+
 .header {
-  .header-inner {
-    background: yellow;
-    padding: 2rem;
+  background: $main_color;
+  .container {
+    padding: 1rem;
     .title {
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
   }
 }
 
-.event {
+.searchForm {
   .container {
-    max-width: 1600px;
+    padding: 3rem 0;
+  }
+}
+
+.inputBlock {
+  .inputKey {
+    background: #efefef;
+    border: none;
+    padding: 1.6rem 3rem;
+    outline: none;
+    font-size: 2.1rem;
+  }
+  .searchBtn {
+    font-size: 2.1rem;
+    background: $main_color;
+    border: none;
+    padding: 1.6rem;
+    border-radius: 9px;
+    margin-left: 1rem;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+.selectBlock {
+  margin-top: 3rem;
+}
+
+.event {
+  .event__list {
+    .event__item {
+      margin-bottom: 3rem;
+      .event__infos {
+        padding: 2rem;
+        .event__title {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+        .event__time {
+          font-size: 1.4rem;
+        }
+      }
+    }
   }
 }
 
 .footer {
-  .footer-inner {
-    background: yellow;
+  background: $main_color;
+  .container {
     padding: 2rem;
   }
 }

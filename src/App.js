@@ -71,7 +71,7 @@ class App extends Component {
           date={date}
         />
         <main>
-          <Events eventsDatas={eventsDatas} handlePage={this.handlePage} />
+          <Events eventsDatas={eventsDatas} />
         </main>
         <Footer />
       </div>
