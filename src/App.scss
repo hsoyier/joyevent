@@ -76,6 +76,15 @@ img {
   margin-top: 3rem;
 }
 
+.selectBtn {
+  border: none;
+  outline: none;
+  height: 3.4rem;
+  cursor: pointer;
+  margin-right: 2rem;
+  width: 140px;
+}
+
 .event {
   .event__list {
     .event__item {
@@ -98,5 +107,36 @@ img {
   background: $main_color;
   .container {
     padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .inputBlock {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    .inputKey {
+      width: 75%;
+    }
+  }
+
+  .selectBlock {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0 1rem;
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .selectBtn {
+    width: 42%;
+  }
+
+  .event {
+    overflow: hidden;
+  }
+
+  .event__title {
+    margin-bottom: 1rem;
   }
 }

@@ -12,7 +12,8 @@ class App extends Component {
     eventsDatas: [],
     logo: "",
     value: "",
-    date: ""
+    date: "",
+    category: ""
   };
   componentWillMount = () => {
     this.getApi();
@@ -31,9 +32,9 @@ class App extends Component {
     }
   };
   searchApi = async () => {
-    const { value, date } = this.state;
+    const { value, date, category } = this.state;
     const response = await fetch(
-      `http://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search/?location.address=${value}&start_date.keyword=${date}&token=${PERSONAL_OAUTH_TOKEN}`
+      `http://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search/?location.address=${value}&start_date.keyword=${date}&categories=${category}&token=${PERSONAL_OAUTH_TOKEN}`
     );
     if (response.status === 200) {
       const json = await response.json();
@@ -44,6 +45,7 @@ class App extends Component {
       });
     }
   };
+
   handleSubmit = e => {
     e.preventDefault();
     this.searchApi();
@@ -58,6 +60,11 @@ class App extends Component {
       date: e.target.value
     });
   };
+  hadnleCategory = e => {
+    this.setState({
+      category: e.target.value
+    });
+  };
   render() {
     const { eventsDatas, value, date } = this.state;
     return (
@@ -67,6 +74,7 @@ class App extends Component {
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
           hadnleDate={this.hadnleDate}
+          hadnleCategory={this.hadnleCategory}
           value={value}
           date={date}
         />
