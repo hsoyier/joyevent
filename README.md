@@ -70,8 +70,8 @@ Project is: _still developed_
     reiyoshizawa0418@email.com directly instead of using issue tracker. We value your effort
     to improve the security and privacy of this project!
 - Related projects:
-  - Joy Event: https://github.com/oyyer/visual-translate
-  - Visual Translat: https://github.com/oyyer/portfolio-react
+  - Visual Translat: https://github.com/oyyer/visual-translate
+  - Rei Yoshizawa Portfolio Website: https://github.com/oyyer/portfolio-react
 
 ## Contact
 
