@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Events from "./components/Events";
 import SearchForm from "./components/SearchForm";
+import SearchKeyword from "./components/SearchKeyword";
 
 const PERSONAL_OAUTH_TOKEN = "ZVYAWGFJWR3NSCZX6R4F";
 
@@ -13,7 +14,8 @@ class App extends Component {
     logo: "",
     value: "",
     date: "",
-    category: ""
+    category: "",
+    searchKeyword: ""
   };
   componentWillMount = () => {
     this.getApi();
@@ -41,7 +43,12 @@ class App extends Component {
       const events = await json.events;
       console.log(events);
       this.setState({
-        eventsDatas: events
+        eventsDatas: events,
+        searchKeyword: <SearchKeyword value={value} />
+      });
+    } else {
+      this.setState({
+        searchKeyword: ""
       });
     }
   };
@@ -66,7 +73,7 @@ class App extends Component {
     });
   };
   render() {
-    const { eventsDatas, value, date } = this.state;
+    const { eventsDatas, value, date, searchKeyword } = this.state;
     return (
       <div className="App">
         <Header />
@@ -78,6 +85,7 @@ class App extends Component {
           value={value}
           date={date}
         />
+        {searchKeyword}
         <main>
           <Events eventsDatas={eventsDatas} />
         </main>

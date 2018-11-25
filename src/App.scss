@@ -42,11 +42,6 @@ img {
     .inner {
       width: 7%;
       display: inline-block;
-      .logo {
-      }
-      .title {
-        font-size: 2.4rem;
-      }
     }
   }
 }
@@ -54,6 +49,16 @@ img {
 .searchForm {
   .container {
     padding: 3rem 0;
+  }
+}
+
+.searchKeyword {
+  .container {
+    padding: 2rem 0;
+    .searchKeyword__text {
+      font-size: 3rem;
+      font-weight: bold;
+    }
   }
 }
 
@@ -95,6 +100,13 @@ img {
   .event__list {
     .event__item {
       margin-bottom: 3rem;
+      .img__box {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        height: 160px;
+      }
       .event__infos {
         padding: 2rem;
         .event__title {
