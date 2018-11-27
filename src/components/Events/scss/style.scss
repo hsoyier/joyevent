@@ -1,0 +1,34 @@
+.event {
+  .event__list {
+    .event__item {
+      margin-bottom: 3rem;
+      .img__box {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        height: 160px;
+      }
+      .event__infos {
+        padding: 2rem;
+        .event__title {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+        .event__time {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .event {
+    overflow: hidden;
+  }
+
+  .event__title {
+    margin-bottom: 1rem;
+  }
+}

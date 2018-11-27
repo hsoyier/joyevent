@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./App.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Events from "./components/Events";
-import SearchForm from "./components/SearchForm";
-import SearchKeyword from "./components/SearchKeyword";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Events from "./components/Events/Events";
+import SearchForm from "./components/SearchForm/SearchForm";
+import SearchKeyword from "./components/SearchKeyword/SearchKeyword";
 
 const PERSONAL_OAUTH_TOKEN = "ZVYAWGFJWR3NSCZX6R4F";
 

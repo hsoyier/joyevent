@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./scss/style.scss";
 
 class SearchForm extends Component {
   render() {

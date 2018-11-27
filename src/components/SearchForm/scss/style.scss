@@ -1,0 +1,64 @@
+$main_color: #fce440;
+
+.searchForm {
+  .container {
+    padding: 3rem 0;
+  }
+}
+
+.inputBlock {
+  .inputKey {
+    background: #efefef;
+    border: none;
+    padding: 1.6rem 3rem;
+    outline: none;
+    font-size: 2.1rem;
+  }
+  .searchBtn {
+    font-size: 2.1rem;
+    background: $main_color;
+    border: none;
+    padding: 1.6rem;
+    border-radius: 9px;
+    margin-left: 1rem;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+.selectBlock {
+  margin-top: 3rem;
+}
+
+.selectBtn {
+  border: none;
+  outline: none;
+  height: 3.4rem;
+  cursor: pointer;
+  margin-right: 2rem;
+  width: 140px;
+}
+
+@media screen and (max-width: 640px) {
+  .inputBlock {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    .inputKey {
+      width: 75%;
+    }
+  }
+
+  .selectBlock {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0 1rem;
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .selectBtn {
+    width: 42%;
+  }
+}

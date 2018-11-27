@@ -1,0 +1,23 @@
+$main_color: #fce440;
+
+.header {
+  background: $main_color;
+  .container {
+    padding: 1rem;
+    .inner {
+      width: 7%;
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header {
+    .container {
+      padding: 1rem 2rem;
+      .inner {
+        width: 17%;
+      }
+    }
+  }
+}
