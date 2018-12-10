@@ -1,16 +1,22 @@
 import React from "react";
+import { Route, Link } from "react-router-dom";
+import Event from "../Event/Event";
 import "./scss/style.scss";
 
 class Events extends React.Component {
   render() {
     return (
-      <React.Fragment>
-        <section className="event">
-          <div className="container">
-            <ul className="row event__list">
-              {this.props.eventsDatas.map(event => {
-                return (
-                  <li className="col-md-4 event__item" key={event.id}>
+      <section className="event">
+        <div className="container">
+          <ul className="row event__list">
+            {this.props.eventsDatas.map(event => {
+              return (
+                <Link
+                  to={`/event/${event.id}`}
+                  className="col-md-4 event__item"
+                  key={event.id}
+                >
+                  <li key={event.id}>
                     {event.logo ? (
                       <div
                         className="img__box"
@@ -28,12 +34,13 @@ class Events extends React.Component {
                       <p className="event__time">{event.start.local}</p>
                     </div>
                   </li>
-                );
-              })}
-            </ul>
-          </div>
-        </section>
-      </React.Fragment>
+                </Link>
+              );
+            })}
+          </ul>
+          <Route path={`/event/:id`} component={Event} />
+        </div>
+      </section>
     );
   }
 }
