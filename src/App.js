@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Home from "./components/Home/Home";
 import Event from "./components/Event/Event";
+import Home from "./components/Home/Home";
 
 class App extends Component {
   render() {
@@ -13,6 +13,8 @@ class App extends Component {
         <div className="App">
           <Header />
           <Route exact path="/" component={Home} />
+          <Route path="/about" render={() => <div>about</div>} />
+          <Route path="/event/:id" component={Event} />
           <Footer />
         </div>
       </Router>

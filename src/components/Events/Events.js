@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Event from "../Event/Event";
 import "./scss/style.scss";
 
@@ -38,7 +38,6 @@ class Events extends React.Component {
               );
             })}
           </ul>
-          <Route path={`/event/:id`} component={Event} />
         </div>
       </section>
     );
