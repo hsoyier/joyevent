@@ -1,0 +1,27 @@
+.eventItem {
+  background: #eee;
+}
+
+.eventItem__inner {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.eventItem__upper {
+  background: #fff;
+  margin-bottom: 4rem;
+}
+
+.eventItem__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  height: 350px;
+}
+
+.eventItem__buttom {
+}
+
+@media screen and (max-width: 640px) {
+}
