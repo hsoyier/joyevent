@@ -1,5 +1,5 @@
 .eventItem {
-  background: #eee;
+  background: #fff;
 }
 
 .eventItem__inner {
@@ -11,6 +11,7 @@
 .eventItem__upper {
   background: #fff;
   margin-bottom: 4rem;
+  align-items: center;
 }
 
 .eventItem__image {
@@ -20,7 +21,12 @@
   height: 350px;
 }
 
-.eventItem__buttom {
+.eventItem__name {
+  margin-bottom: 3rem;
+}
+
+.eventItem__description__txt {
+  line-height: 3rem;
 }
 
 @media screen and (max-width: 640px) {
