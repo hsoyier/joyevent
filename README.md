@@ -64,20 +64,20 @@ Project is: _still developed_
 ## Links
 
 - Project homepage: https://joyevent.reiyoshizawa.com/
-- Repository: https://github.com/oyyer/joyevent
-- Issue tracker: https://github.com/oyyer/joyevent/issues
+- Repository: https://github.com/hsoyier/joyevent
+- Issue tracker: https://github.com/hsoyier/joyevent/issues
   - In case of sensitive bugs like security vulnerabilities, please contact
     reiyoshizawa0418@email.com directly instead of using issue tracker. We value your effort
     to improve the security and privacy of this project!
 - Related projects:
-  - Visual Translat: https://github.com/oyyer/visual-translate
-  - Rei Yoshizawa Portfolio Website: https://github.com/oyyer/portfolio-react
+  - Visual Translat: https://github.com/hsoyier/visual-translate
+  - Rei Yoshizawa Portfolio Website: https://github.com/hsoyier/portfolio-react
 
 ## Contact
 
 Feel free to contact me!
 
 - Website - Rei Yoshizawa Portfolio Website (https://www.reiyoshizawa.com/)
-- Twitter - @oyyer\_ (https://twitter.com/oyyer_)
+- Twitter - @hsoyier\_ (https://twitter.com/oyyer_)
 
 [Back To The Top](#Joyevent)
